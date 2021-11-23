@@ -1,0 +1,52 @@
+let r;
+let x;
+let y;
+
+let vx;
+let vy;
+
+let ax;
+let ay;
+
+function setup() {
+  createCanvas(600, 400);
+  background(225);
+
+  r = 100;
+  x = 100;
+  y = 100;
+  
+  
+//velocity = new PVector(2.5,10);
+
+  vx = 5;
+  vy = 1;
+  
+  ax = 0;
+  ay = 0.1;
+  
+//  acceleration = new PVector(0, 0.2);
+   
+  
+  
+  
+}
+
+function draw() {
+  background(225);
+
+  stroke(100,100,100);
+  fill(225);
+  strokeWeight(4);
+  
+  vx = vx + ax;
+  vy = vy + ay;
+  
+  x = x + vx;
+  y = y + vy;
+  
+  circle(x, y, r); 
+  
+ 
+  
+}
