@@ -13,17 +13,15 @@ function setup() {
   background(225);
 
   r = 100;
-  x = 100;
+  x = r/2;
   y = 100;
   
-  
-//velocity = new PVector(2.5,10);
 
-  vx = 5;
-  vy = 1;
+  vx = 3;
+  vy = 2;
   
   ax = 0;
-  ay = 0.1;
+  ay = 0;
   
 //  acceleration = new PVector(0, 0.2);
    
@@ -45,11 +43,22 @@ function draw() {
   x = x + vx;
   y = y + vy;
   
+  
+  
+
+  
+   if ((x > (windowWidth - r - 10)) || (x < r/2)) {
+    vx = vx * -1;
+  }
+
+   if ((y > (windowHeight - 2*r - 20)) || (y < r/2)) {
+    vy = vy * -1;
+//    ay = ay * -1;
+  }
+
+  
   circle(x, y, r); 
-  
-  
-  
-  
+
   
   
 }
