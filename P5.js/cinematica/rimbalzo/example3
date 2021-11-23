@@ -1,0 +1,31 @@
+let y;
+let speed;
+let gravity;
+
+
+
+function setup() {
+  createCanvas(600, 500);
+  background(225);
+  y = 50;
+  speed = 0;
+  gravity = 0.2;
+}
+
+
+function draw() {
+  background(225);
+  fill(0);
+
+  y = y + speed;
+  speed = speed + gravity;
+
+  if (y > (height - 20)) {
+    speed = - (0.98) * speed;
+    }
+
+  
+  ellipse(width / 2, y,30,30);
+
+
+}
