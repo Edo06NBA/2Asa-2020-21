@@ -1,0 +1,15 @@
+function setup() {
+  createCanvas(600, 600);
+  background (10, 100, 225)
+  x=1;
+  y=2
+}
+
+function draw() {
+  background(250, 50, 22);
+  x= x+1;
+  y= y+2;
+  fill(200,255,255)
+  strokeWeight(1)
+  circle(x, 1, y)
+}
