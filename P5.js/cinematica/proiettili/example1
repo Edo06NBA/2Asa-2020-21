@@ -16,19 +16,11 @@ function setup() {
   x = 100;
   y = 100;
   
-  
-//velocity = new PVector(2.5,10);
-
   vx = 5;
   vy = 1;
   
   ax = 0;
   ay = 0.1;
-  
-//  acceleration = new PVector(0, 0.2);
-   
-  
-  
   
 }
 
@@ -46,7 +38,5 @@ function draw() {
   y = y + vy;
   
   circle(x, y, r); 
-  
- 
   
 }
