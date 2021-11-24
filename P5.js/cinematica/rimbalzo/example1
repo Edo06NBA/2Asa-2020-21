@@ -47,11 +47,11 @@ function draw() {
   
 
   
-   if ((x > (windowWidth - r - 10)) || (x < r/2)) {
+   if ((x > (windowWidth - r - 100)) || (x < r/2)) {
     vx = vx * -1;
   }
 
-   if ((y > (windowHeight - 2*r - 20)) || (y < r/2)) {
+   if ((y > (windowHeight - 2*r - 90)) || (y < r/2)) {
     vy = vy * -1;
 //    ay = ay * -1;
   }
