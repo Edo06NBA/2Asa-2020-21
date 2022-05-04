@@ -1,0 +1,9 @@
+word=input("Enter the word:")
+vocali=0
+for w in word:
+      if(w=='a' or w=='e' or w=='i' or w=='o' or w=='u' or w=='A' or w=='E' or w=='I' or w=='O' or w=='U'):
+            vocali=vocali+1
+
+
+print("Il numero di vocali è ")
+print(vocali)
